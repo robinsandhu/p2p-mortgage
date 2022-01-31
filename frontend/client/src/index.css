@@ -1,0 +1,323 @@
+* {
+  /* color: #dbdada; */
+  color: black;
+}
+
+h1, h2, h4, h3, h5, p, h6 {
+  color: #dbdada;
+}
+
+body{
+  margin: 0;
+  background-image: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-left: 25px;
+  padding-top: 10px;
+  background-color: rgb(34, 34, 34);
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.intro-message {
+  color: #AAA;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+.footer-text {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.footer-text:hover {
+  color: white;
+}
+
+.btn {
+  text-align: center;
+  width: 180px;
+  border-radius: 6px;
+  padding: 8px;
+  line-height: 1.333;
+  text-decoration: none;
+}
+
+.list{
+  display: flex;
+}
+
+.btn-success {
+  background-color: rgb(92, 184, 92);
+}
+
+.btn-success:hover {
+  background-color: rgb(65, 156, 65);
+}
+
+.btn-danger {
+  background-color: rgb(217, 83, 79);
+}
+
+.btn-danger:hover {
+  background-color: rgb(202, 57, 52);
+}
+
+.list--item {
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-family: "Open Sans", sans-serif;
+  /* min-height: 100%; */
+}
+
+.footer {
+  background-color: rgb(34, 34, 34);;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  /* height: 50px; */
+}
+
+input {
+  width: 500px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  padding: 5px;
+}
+
+h1, h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #AAA;
+  font-size: 32px;
+}
+
+h3 {
+  font-weight: normal;
+  color: #AAA;
+  font-size: 24px;
+}
+
+.black {
+  color: black;
+}
+
+#balance {
+  color: black;
+}
+
+.hint {
+  color: #666;
+}
+
+.content-table {
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+}
+
+.content-table thead tr {
+  background-color: #0ab18f;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th {
+  padding: 12px 15px;
+  color: white;
+}
+
+.content-table td {
+  padding: 12px 15px;
+  color: black;
+  /* color: white; */
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #0ab18f;
+}
+
+.form-container {
+  background-color: rgb(217, 83, 79);
+  padding: 10px 20px;
+  margin-top: 12px;
+  border-radius: 6px;
+}
+
+.loan-request-form label{
+  display: block;
+  padding: 3px 0;
+}
+
+.loan-request-form input[type="number"],
+.loan-request-form input[type="date"]{  
+  width: 100%;
+  display: block;
+  margin: 1px auto 10px auto;
+  color: black;
+}
+
+.loan-request-form select {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  color: black;
+}
+
+#sendbtn {
+  display: block;
+  color: black;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.form-header {
+  text-align: center;
+  margin: 0;
+}
+
+.my-modal {
+  border: 1px solid #888;
+  padding: 10px 20px;
+  width: 40%;
+  margin: 2% auto;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.my-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.my-modal-head {
+  /* position: absolute; */
+  width: 100%;
+}
+
+.my-modal-head h3 {
+  color: black;
+  margin: 7px 0;
+}
+
+.my-modal-footer {
+  text-align: right;
+}
+
+.my-modal-footer button {
+  color: black;
+}
+
+.my-modal-body h4 {
+  color: black;
+}
+
+.my-modal--table {
+  width: 100%;
+  margin: 25px 0;
+  font-size: 0.9em;
+  border-radius: 6px 6px 0 0;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.my-modal--table thead tr {
+  text-align: left;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.my-modal--table td
+{
+  padding: 12px 15px;
+  color: black;
+}
+
+.my-modal--table th {
+  padding: 12px 15px;
+  color: black;
+}
+
+.my-modal--table tbody{
+  background-color: lightblue;
+}
+
+.my-modal--table td,
+.my-modal--table th {
+  border: 1px solid black;
+}
+
+.verify-form input{
+  display: block;
+  margin: 5px auto;
+}
+
+.verify-form button{
+  color: black;
+  cursor: pointer;
+}
+
+/* .verify-form-divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+} */
+
+.token {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+
+}

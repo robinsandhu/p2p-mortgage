@@ -1,0 +1,35 @@
+{
+    "caliper": {
+        "blockchain": "ethereum",
+        "command" : {
+            "start": "docker-compose -f network/ethereum/1node-clique/docker-compose.yml up -d && sleep 3",
+            "end" : "docker-compose -f network/ethereum/1node-clique/docker-compose.yml down"
+          }
+    },
+    "ethereum": {
+        "url": "ws://localhost:8545",
+        "contractDeployerAddress": "0x51244B2b2DB21D1C75Ab220e046330baF9603183",
+        "contractDeployerAddressPrivateKey": "e9af75b6c4095f3c98b2ae34264f8185d8d852eb859d8145d25ece8cf2ed9e6a",
+        "fromAddress": "0x52E5B2277A26A89009E05FAfde7B4b6DA988B6fb",
+        "fromAddressPrivateKey": "8962e6f87fd8fe69bd2c52f07e5f4e4b827b399dc6e55195af265f7335517bd8",
+        "transactionConfirmationBlocks": 6,
+        "contracts": {
+            "Bank": {
+                "path": "src/contract/ethereum/Bank/Bank.json",
+                "gas": {
+                    "open": 45000,
+                    "query": 100000,
+                    "transfer": 70000
+                }
+            },
+            "Asset": {
+                "path": "src/contract/ethereum/Asset/Asset.json",
+                "gas": {
+                    "open": 45000,
+                    "query": 100000,
+                    "transfer": 70000
+                }
+            }
+        }
+    }
+}
